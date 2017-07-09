@@ -1,0 +1,59 @@
+
+input[type=search] {
+	background: #ffe082 url(http://hindimasti.co/bollywood/tpl/style/search.png) no-repeat 1px center ;
+   color: transparent;
+  
+	
+	width: 117px;
+  height: 25px;
+	position:absolute; z-index:1;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 190px;
+  background:#ffffff;
+	color : brown;
+  		box-shadow: 0px 5px 10px  #333;
+		-webkit-box-shadow: 0px 5px 10px #333;
+		-moz-box-shadow: 0px 5px 10px #333;
+}
+
+input:-moz-placeholder {
+	color: transparent;
+}
+input::-webkit-input-placeholder {
+	color: transparent;
+}
+/* Demo 2 */
+#demo-2 input[type=search] {
+	background: #efebe9 url(http://hindimasti.co/bollywood/tpl/style/search.png) no-repeat 15px center ;
+
+	outline: none;
+	width: 25px;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 180px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}

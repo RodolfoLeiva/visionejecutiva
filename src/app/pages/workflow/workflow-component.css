@@ -1,0 +1,11 @@
+.k-panelbar {
+      
+        background-color: $panel-bg;
+        background-clip: padding-box;
+
+        }
+
+        .k-content {
+            color: $base-text;
+            background-color: $base-bg;
+        }

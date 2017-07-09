@@ -1,0 +1,38 @@
+
+ 
+<md-card class="white" >
+        <span class="card-title rlight black-text " [ngStyle]="{'font-size': '28px'}"><md-icon>notifications_none</md-icon> Workflow <a  (click)="open()" class=" waves-effect waves-orange right white lighten-5 black-text "> <i class="material-icons grey-text right">more_vert</i></a>
+          <a  href="#!" class=" waves-effect waves-orange right  white lighten-5 "> <i class="material-icons grey-text right">fullscreen</i></a>
+        </span>
+          
+          <div class="divider"></div>
+          <br>
+              
+           <div class="row" >
+               <br>
+                <div class="col s6" *ngFor= "let workflowicon of tablerowf" style="padding-bottom: 25px">
+                         <a href="#!" >
+                          <md-card [style.background]="rcolor.colorbaselg2" class=" waves-effect waves-orange" >
+                              <md-card-content>
+                                    <div class="center ">
+                                        <i class="material-icons amber-text  text-darken-2"style="font-size:58px">{{workflowicon.icono}}</i>    
+                                    </div>
+                                    <md-divider></md-divider>
+                               </md-card-content>
+
+                              <md-card-footer class="white lighten-4 grey-text  text-darken-1 waves-effect waves-orange" style="padding-top:18px;padding:8px;font-size:14px;height: 40px">
+                                
+                               <div class= "left" style="padding-top:8px">{{workflowicon.tipo}}</div>  <div class="right rblack"style="padding:0 8px 0  8px;font-size:18px;border-radius:50%;background:#ffecb3"> {{workflowicon.cantidad}} </div>  
+                                
+                              </md-card-footer >
+                          </md-card>
+                  </a>
+                </div>
+               
+          </div>
+
+  </md-card>  
+         
+
+         
+    

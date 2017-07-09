@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.rnavbar {
+ position: fixed;
+  top:0;
+    height: 70px;
+    width: 100%;
+}
+.r-container {
+  padding-top:0,8em;
+  padding-left: 0,1em!important;
+  padding-right: 0,1em!important;
+}
+.rblack{ 
+  font-family: Roboto;
+  font-weight: 700;
+}
+.rlight {
+  font-family: Roboto;
+   font-weight: 100;
+}
+.rnormal{ 
+  font-family: Roboto;
+   font-weight: 400;
+}
+.cabecera{ 
+	padding-top: 5px;
+	padding-bottom : 1px;
+	padding-left : 20px;
+	padding-right:  20px;
+	}
+
+.rcontenedor{
+	padding-top: 28px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	background-color : #eeeeee;
+}
+.md-sidenav { 
+  width: 170px;
+}
+
+.activado { 
+  background-color: #ff6f00;
+}
