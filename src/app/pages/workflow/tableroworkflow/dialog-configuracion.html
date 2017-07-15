@@ -1,1 +1,25 @@
-<h4>Soy un dialogo</h4>
+<div style="width: 250px;height: 320px;">
+	<h2 md-dialog-title [style.color]="theme?.color.base">Workflows</h2>
+	<md-dialog-content>
+		  <div class="vacio left"> 
+			    <div [style.background]="theme?.color.baselg1" class="titulo center white-text"><h6>En Tablero</h6></div>
+				<div *ngFor= "let workflowicon of workflow.tablerowf; let i = index" class="contenedorbtn" >
+					<button md-raised-button  style="width: 106px" (click)="invisible(i)" [style.background]="theme?.color.baselg2"> {{workflowicon.tipo}}</button>
+			 	</div>
+		  </div>
+		   <div class="vacio right"> 
+			    <div [style.background]="theme?.color.baselg1" class="titulo center white-text"><h6>Silenciados</h6></div>
+				<div *ngFor= "let workflowicon of workflow.tableroreverso; let i = index" class="contenedorbtn" >
+					<button md-raised-button  style="width: 106px" (click)="visible(i)" [style.background]="theme?.color.baselg2"> {{workflowicon.tipo}}</button>
+			 	</div>
+		  </div>
+		  
+	</md-dialog-content>
+	<md-dialog-actions>
+
+    <div class="row" >
+      <br>
+	  <button  md-button [style.background]="theme?.color.baselg2" class=" rblack"[md-dialog-close]="true">Ok</button>
+	</div>
+	</md-dialog-actions>
+</div>

@@ -9,19 +9,21 @@
 
 <div class="brown lighten-4" >
 <div >
-      <nav [style.background]="rcolor.colorbase" class="z-depth-3" >
+      <nav [style.background]="theme.color.base" class="z-depth-3" >
           <div class="nav-wrapper">
           
           <ul class="left col s12 ">
-             <li style="padding-left: 15px;"><button  [style.background]="rcolor.colorbase" class=" z-depth-2"   md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button></li>    
+             <li style="padding-left: 15px;"><button  [style.background]="theme.color.base" class=" z-depth-2"   md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button></li>    
              
-              <li style="padding-left: 15px;"><r-buscar></r-buscar><li>
+              <li style="padding-left: 15px;"><button  md-icon-button [style.background]="theme.color.basedk1" >
+                      <md-icon>search</md-icon>
+                    </button><li>
           </ul>
            <ul class="right ">
               <li><a [routerLink]="['/dashboard']" [routerLinkActive]="['activado']"><i class="material-icons">dashboard</i></a></li>
               <li><a [routerLink]="['/workflow']" [routerLinkActive]="['activado']"><i class="material-icons">notifications_none</i></a></li>
               
-              <li style="padding-right:15px"><button md-icon-button [style.background]="rcolor.colorbase" [mdMenuTriggerFor]="menu">
+              <li style="padding-right:15px"><button md-icon-button [style.background]="theme.color.base" [mdMenuTriggerFor]="menu">
                       <md-icon>person_outline</md-icon>
                     </button>
                     <md-menu  #menu="mdMenu"  x-position="after" y-position="above">
@@ -56,19 +58,20 @@
  </div>
 
  <div class="page-content">
+ 
 <router-outlet></router-outlet>
 
- <footer class="page-footer brown lighten-3">
+ <footer [style.background]="theme.color.baselg2" class="page-footer ">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
+                <h5 [style.color]="theme.color.baselg1"  >Footer Content</h5>
                 <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
               </div>
               
             </div>
           </div>
-          <div class="footer-copyright">
+          <div [style.background]="theme.color.baselg1" class="footer-copyright">
             <div class="container">
             © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>

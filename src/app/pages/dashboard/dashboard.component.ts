@@ -1,5 +1,6 @@
 'use estrict'
 import { Component } from '@angular/core' ;
+import { theme } from './../../services/plantillacolor.service';
 
 @Component({
 
@@ -9,6 +10,12 @@ templateUrl: './dashboard.component.html',
 
 })
 export class dashboardComponent	 {
+	
+  constructor( private theme:theme){
+		
+	}
 
+ngOnInit(){
 
+}
 }
